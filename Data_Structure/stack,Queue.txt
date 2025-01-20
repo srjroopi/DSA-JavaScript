@@ -1,0 +1,28 @@
+stack: last in, first out
+
+const stack = []
+stack.add(1)
+stack.add(2)
+stack.add(3) // stack = [1,2,3]
+stack.pop() //[1,2]
+stack.pop() // [1]
+stack.pop() // [ ]
+---------------------------------------------
+Queue : First in First Out
+
+const stack = []
+stack.add(1)
+stack.add(2)
+stack.add(3) // stack = [1,2,3]
+stack.pop() //[2,3]
+stack.pop() // [3]
+stack.pop() // [ ]
+
+Queue Implementation
+
+1. enqueue(elemet) - add
+2. dequeue() - remove old element
+3. peek() - get the value of element at front of queue
+4. isEmpty() -  check empty or not
+5. size() - get the number of element in queue
+6. print() - visualize the element in the queue
