@@ -1,11 +1,11 @@
 class Queue {
   constructor() {
     this.items = {};
-    this.rear = 1;
-    this.front = 1;
+    this.rear = 0;
+    this.front = 0;
   }
 
-  equeue(element) {
+  enqueue(element) {
     this.items[this.rear] = element;
     this.rear++;
   }
@@ -30,18 +30,18 @@ class Queue {
   }
 
   print() {
-    console.log(this.items);
+    console.log(this.items)
   }
 }
 
-const queue = new Queue();
-console.log(queue.isEmpty());
+const queue=new Queue()
+console.log(queue.isEmpty())
+queue.enqueue(23)
+queue.enqueue(23)
+queue.enqueue(24)
+console.log(queue.size())
+queue.print()
 
-queue.equeue(10);
-queue.equeue(20);
-queue.equeue(30);
-
-console.log(queue.size());
-queue.print();
-console.log(queue.dequeue());
-console.log(queue.peek());
+console.log(queue.dequeue())
+queue.print()
+console.log(queue.peek())
